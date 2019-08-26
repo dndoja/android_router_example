@@ -4,8 +4,8 @@ import android.content.Context
 import com.dndoja.routingexample.core.BaseScene
 import com.dndoja.routingexample.models.Item
 import com.dndoja.routingexample.models.ItemDetails
-import com.dndoja.routingexample.screens.details.DetailsSceneBuilder
-import com.dndoja.routingexample.screens.master.MasterSceneBuilder
+import com.dndoja.routingexample.screens.home.details.DetailsSceneBuilder
+import com.dndoja.routingexample.screens.home.master.MasterSceneBuilder
 import java.io.Serializable
 
 enum class SceneType {

@@ -1,4 +1,4 @@
-package com.dndoja.routingexample.screens.details
+package com.dndoja.routingexample.screens.home.details
 
 import android.content.Context
 import android.util.AttributeSet

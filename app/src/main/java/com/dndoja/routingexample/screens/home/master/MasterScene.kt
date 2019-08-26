@@ -1,4 +1,4 @@
-package com.dndoja.routingexample.screens.master
+package com.dndoja.routingexample.screens.home.master
 
 import android.content.Context
 import android.util.AttributeSet
@@ -6,14 +6,15 @@ import android.widget.Button
 import android.widget.TextView
 import com.dndoja.routingexample.R
 import com.dndoja.routingexample.core.BaseScene
+import com.dndoja.routingexample.screens.auth.login.LoginPresenter
 
-interface MasterSceneContract{
+interface LoginSceneContract{
     var name: String
 }
 
 class MasterScene @JvmOverloads constructor(
         context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
-) : BaseScene<MasterPresenter>(context, attrs, defStyleAttr), MasterSceneContract{
+) : BaseScene<MasterPresenter>(context, attrs, defStyleAttr), LoginSceneContract{
 
     override var name: String = ""
         set(value) {

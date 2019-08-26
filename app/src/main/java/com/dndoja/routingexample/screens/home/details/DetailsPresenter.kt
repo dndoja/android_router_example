@@ -1,10 +1,10 @@
-package com.dndoja.routingexample.screens.details
+package com.dndoja.routingexample.screens.home.details
 
-import com.dndoja.routingexample.core.OnRoutingRequestedListener
 import com.dndoja.routingexample.core.Presenter
 import com.dndoja.routingexample.models.ItemDetails
+import java.io.Serializable
 
-class DetailsPresenter: Presenter<ItemDetails, DetailsViewContract> {
+class DetailsPresenter: Presenter<ItemDetails, DetailsViewContract, Serializable> {
     override var state: ItemDetails = ItemDetails()
     set(value) {
         field = value
@@ -13,5 +13,5 @@ class DetailsPresenter: Presenter<ItemDetails, DetailsViewContract> {
 
     override var contract: DetailsViewContract? = null
 
-    override var onRoutingRequestedListener: OnRoutingRequestedListener? = null
+    override var onFinishedListener: ((Serializable) -> Unit)? = null
 }
